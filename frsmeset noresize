@@ -1,0 +1,11 @@
+<frameset rows="25%,50%,25%">
+	<frame scr=""/>
+    <frameset cols="40%,60%">
+    	<frame scr="" />
+        <frameset rows="25%,75%">
+    	<frame scr="" />
+        <frame scr="" />
+    </frameset>
+    </frameset>
+    <frame scr=""  noresize="noresize"/>
+</frameset>
