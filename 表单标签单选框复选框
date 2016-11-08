@@ -1,0 +1,63 @@
+<!-表单标签，用户交互->
+<form method="post" action="">
+	<label for="username">用户名:</label>
+    <input type="text" name="username" id="username" value="" />
+    <label for="pass">密码:</label>
+    <input type="password" name="pass" id="pass" value="" />
+    <input type="submit" value="确定" name="submit" />
+    <input type="reset"  value="重置" name="reset" />
+</form><br /><br />
+<form  method="post" action="">
+	<label for="username">username:</label>
+    <input type="text" name="username" id="username" value="" />
+    <label for="pass">password:</label>
+    <input type="password" name=" password" id="password" value="" />
+    <input type="submit" value="log in" name="submit" />
+    <input type="reset" name="reset" value="reset" />
+</form><br /><br />
+<!-文本域，多行输入->
+<form method="post" action="">
+	<label>contract us</label>
+    <textarea cols="60" rows="20">Here input please...</textarea>
+</form><br /><br />
+<!-单选框->
+<form method="post" action="">
+	<label>性别：</label>
+    <label>男</label>
+    <input type="radio" value="1" name="gender" />
+    <label>女</label>
+    <input type="radio" value="2" name="gender" />
+    <label>不知道</label>
+    <input type="radio" value="3" name="gender" />
+</form><br /><br />
+<!-复选框->
+<form method="post" action="">
+  <label>爱好：</label>
+    <input type="checkbox" value="1" name="A" checked="checked"/>A <!-默认选中->
+    <input type="checkbox" value="2" name="B" />B
+    <input type="checkbox" value="3" name="C" />C
+    <input type="checkbox" value="3" name="D" checked="checked"/>D <!-默认选中->
+</form><br /><br />
+<p>下拉列表单选，节省空间</p>
+<form method="post" action="">
+	<label>hobby:</label>
+    <select>
+    	<option value="A">A</option><!-value后面的A为提交值，即向服务器提交的值；第二个A是提供的一个选项，即显示的值->
+        <option value="B">B</option>
+        <option value="C">C</option>
+        <option value="D">D</option>
+        <option value="E">E</option>
+        <option value="F" selected="selected">F</option><!-selected默认选中->
+    </select>
+</form><br/><br />
+<p>下拉列表多选</p>
+<form method="post" action="">
+	<label>HOBBY:</label>
+    <select multiple="multiple">
+    <option value="a">a</option>
+    <option value="a">b</option>
+    <option value="a">c</option>
+    <option value="a">d</option>
+    <option value="a">e</option>
+    <option value="a">f</option>
+</form>
