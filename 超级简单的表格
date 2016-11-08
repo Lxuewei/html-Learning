@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>表格</title>
+<h4 align="center">超级简单的表格</h4>
+<b>例1：</b>无表头
+<table border="1" align="center";>
+	<tr>
+    	<td>100</td>
+        <td>200</td>
+        <td>300</td>
+    </tr>
+    <tr>
+    	<td>400</td>
+        <td>500</td>
+        <td>600</td>
+    </tr>
+    
+</table><br /><br /><br />
+<b>例2：</b>表头
+<table border="1" align="center">
+	<tr><!-表头th->
+    	<th>姓名</th>
+        <th>电话</th>
+        <th>爱好</th>
+    </tr>
+    <tr>
+    	<td>tom</td>
+        <td>0001</td>
+        <td>football</td>
+    </tr>
+    <tr>
+    	<td>lily</td>
+        <td>0002</td>
+        <td>pingpang</td>
+    </tr>
+	
+</table><br /><br />
+<b>例3：</b>垂直的表头
+<table border="2" align="center">
+	<tr>
+    	<th>姓名</th>
+        <td>张三</td>
+        <td>李四</td>
+    </tr>
+    <tr>
+    	<th>电话</th>
+        <td>1111</td>
+        <td>2222</td>
+    </tr>
+    <tr>
+    	<th>爱好</th>
+        <td>跑步</td>
+        <td>游泳</td>
+    </tr>
+</table>
+
+</body>
+</html>
