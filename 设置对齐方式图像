@@ -1,0 +1,4 @@
+<p>picture<img src="IMG_1998.JPG" width="96" height="128" align="top" /></p>
+<p>picture<img src="IMG_1998.JPG" width="96" height="128" align="middle"/></p>
+<p>picture<img src="IMG_1998.JPG" width="96" height="128" align="bottom"/></p>
+<!-bottom对齐方式是默认的对齐方式->
