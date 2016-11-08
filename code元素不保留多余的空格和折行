@@ -1,0 +1,8 @@
+<!-code元素不保留多余的空格和折行->
+<code>
+	var person={
+    	firstName:"Jim",
+        lastName:"Green",
+        age:50,
+        eyeColor:"blue",
+</code>
