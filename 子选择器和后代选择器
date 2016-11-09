@@ -1,0 +1,50 @@
+子选择器与后代选择器的不同效果
+子选择器：
+<style type="text/css">
+	.food>li{
+       width:110px;
+			 border:1px solid yellow;
+			 font-size:25px;}
+</style>
+</head>
+<body>
+<ul class="food">
+	<li>水果</li>
+    	<ul>
+			  <li>香蕉</li>
+    		<li>苹果</li>
+    		<li>鸭梨</li>
+        </ul>
+     <li>蔬菜</li>
+     	<ul>
+        	  <li>土豆</li>
+            <li>萝卜</li>
+            <li>白菜</li>
+        </ul>
+</ul>
+</body>
+===============================================================================================================
+后代选择器：
+<style type="text/css">
+	.food li{
+       width:110px;
+			 border:1px solid yellow;
+			 font-size:25px;}
+</style>
+</head>
+<body>
+<ul class="food">
+	<li>水果</li>
+    	<ul>
+			  <li>香蕉</li>
+    		<li>苹果</li>
+    		<li>鸭梨</li>
+        </ul>
+     <li>蔬菜</li>
+     	<ul>
+        	  <li>土豆</li>
+            <li>萝卜</li>
+            <li>白菜</li>
+        </ul>
+</ul>
+</body>
