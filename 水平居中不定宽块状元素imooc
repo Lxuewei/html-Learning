@@ -1,0 +1,85 @@
+one：加入table标签（利用table标签长度自适应性，即不定义其长度也不默认父元素body的长度，table长度取决于文本长度）
+two：设置display：inline方法，与第一种类似，显示类型设置为行内元素进行不定宽元素的属性设置
+three：设置position：relative和left：50%，即达到居中的目的
+========================================================================================================
+one：
+	<div>
+    	<table>
+        	<tbody>
+            	<tr><td>
+                	<ul>
+                    	<li>我是第一行文本</li>
+                        <li>我是第二行文本</li>
+                        <li>我是第三行文本</li>
+                    </ul>
+                 </td></tr>
+            </tbody>
+        </table>
+    </div>
+    css部分：
+  <style type="text/css"> 
+  table{
+	border:1px solid blue;
+	margin:0 auto;
+	}
+ </style>
+========================================================================================================
+two：    
+<div class="container">
+    	<ul>
+        	<li href="#">1</li>
+            <li href="#">2</li>
+            <li href="#">3</li>
+        </ul>
+</div>
+css部分：
+<style type="text/css">
+.container{
+	text-align:center;
+	}
+/*margin:0;padding:0(消除文本与div之间的间隙);display:inline设置为行内元素显示*/
+.container ul{
+	list-style:none;
+	margin:0;
+	padding:0;
+	display:inline;
+	}
+/*设置li文本之间的间隔*/
+.container li{
+	display:inline;/*设置为行内元素显示，使123在一行内*/
+	margin-right:8px;
+	}
+</style>
+========================================================================================================
+three：
+<body>
+	<div class="container">
+    	<ul>
+        	<li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+        </ul>
+    </div>
+</body>
+
+css部分：
+<style type="text/css">
+.container{
+	float:left;
+	position:relative;
+	left:50%;
+	}
+.container ul{
+	list-style:none;
+	margin:0;
+	padding:0;
+	position:relative;
+	left:-50%;
+	}
+.container li{
+	display:inline;
+	margin-right:8px;
+	float:left;
+	}
+</style>
+=========================================================================================================
