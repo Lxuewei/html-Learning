@@ -1,0 +1,40 @@
+垂直居中方法一
+
+<style type="text/css">
+table td{
+	background:#ccc;
+	height:150px;
+	}
+</style>
+</head>
+<body>
+	<table><tbody><tr><td class="wrap">
+    <div>
+    	<p>看我是否可以居中。</p>
+        <p>看我是否可以居中。</p>
+        <p>看我是否可以居中。</p>
+    </div>
+    </tr></tr></tbody></table>
+</body>
+=========================================================================================
+垂直居中方法二
+
+<style type="text/css">
+/*垂直居中方法二。好处是无需添加多余的无意义标签，坏处是修改了display的block
+变成了table-cell，破坏了原有块状元素的性质*/
+.container{
+	background:#ccc;
+	height:300px;
+	display:table-cell;/*table-cell设置为表格单元显示*/
+	vertical-align:middle;
+	}
+</style>
+</head>
+<body>
+	<div class="container">
+    	<p>看我是否可以居中。</p>
+        <p>看我是否可以居中。</p>
+        <p>看我是否可以居中。</p>
+    </div>
+</body>
+==========================================================================================
