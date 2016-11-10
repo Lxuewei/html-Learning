@@ -1,0 +1,20 @@
+<style type="text/css">
+/*1.position:absolute;
+  2.float:left或floatLright,
+简单地说，只要HTML中出现以上两句之一，元素display显示类型就会自动变为以display：inline-block（块状元素）
+的方式显示（display：none除外），就可以设置元素的width和height了，切默认宽度不占满父元素。
+*/
+.container a{
+	/*a是行内元素，设置她的width是无效的，但设置为position：absolute后就可以了*/
+	float:left;
+	width:300px;
+	background:#ccc;
+	}
+</style>
+</head>
+<body>
+	<div class="container">
+    	<a href="#" title="嘎嘎嘎嘎">进入课程请单击这里</a>
+    </div>
+</body>
+-------imooc
