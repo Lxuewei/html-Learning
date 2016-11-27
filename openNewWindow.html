@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>openNewWindow</title>
+    <script type="text/javascript">
+        /*1.新窗口打开时弹出确认框，是否打开
+         * 2.通过输入对话框，确定打开网址http://www.google.com/
+         * 3.打开窗口要求宽400像素，高500像素，无菜单栏，无工具栏。
+         * */
+        function openWindow(){
+            var mess=confirm("是否打开新的窗口？");
+            if(mess==true) {
+                window.open("http://www.google.com", '_blank', 'width=400,height=500,menubar=no,toolbar=no');
+            }
+        }
+
+    </script>
+</head>
+<body>
+    <input type="button" value="新窗口打开网址" onclick="openWindow()">
+</body>
+</html>
