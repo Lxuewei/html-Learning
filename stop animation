@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test</title>
+    <style>
+        .div1{
+            border:1px dotted #ccc;
+            background: #bbffaa;
+            text-align: center;
+            width: 800px;;
+            height: 500px;
+            position: absolute;
+            margin:50px 100px;
+        }
+        p{
+            color: red;
+        }
+        #aaron{
+            width: 200px;
+            height: 100px;
+            margin:30px auto;
+            background-color: yellow;
+        }
+    </style>
+    <script src="jquery.min.js"></script>
+</head>
+<body>
+<div class="div1">
+      <h2>stop</h2>
+      <div id="aaron">inner animation</div>
+          <input id="btn1" type="button" value="operate animation">
+          click to see effects:
+          <select id="animation">
+              <option value="1">stop()</option>
+              <option value="2">stop(true)</option>
+              <option value="3">stop(true,true)</option>
+          </select>
+          <input id="btn2" type="button" value="stop animation">
+</div>
+      <script type="text/javascript">
+          //operation
+          $("#btn1").click(function () {
+                  $("#aaron").animate({
+                      height: 300
+                  }, 5000)
+                  $("#aaron").animate({
+                      width: 300
+                  }, 5000)
+                  $("#aaron").animate({
+                      opacity: 0.3
+                  }, 4000)
+          });
+
+          $("#btn2").click(function () {
+              var v=$("#animation").val();
+              if(v=="1"){
+                  //stop current animation
+                  $("#aaron").stop();
+              }else if(v=="2"){
+                  //stop all queues
+                  $("#aaron").stop(true);
+              }else if(v=="3"){
+                  //stop animation,jump to the end of current animation straightly
+                  $("#aaron").stop(true,true);
+              }
+          })
+      </script>
+</body>
+</html>
