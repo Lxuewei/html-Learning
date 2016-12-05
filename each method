@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <title></title>
+    <style>
+        .left div{
+            margin: 20px 50px;
+            background: #bbffaa;
+        }
+        .left{
+            width: 800px;
+            height: 300px;
+            padding: 5px;
+            margin: 20px;
+            text-align: center;
+            border: 1px solid #bfa;
+            background-color: #bfa;
+        }
+        .left  #aaron{
+            padding:10px;
+            background-color: yellow;
+        }
+    </style>
+    <script src="jquery.min.js"></script>
+</head>
+<body>
+<div class="left">
+    <h2>each method</h2>
+    <p>testinng...</p>
+    <div id="aaron">result:</div><br>
+    <div class="div1">
+    click to see the result:
+    <select id="animation">
+        <option value="1"> each arrays</option>
+        <option value="2">each object</option>
+    </select>
+    <input id="btn" type="button" value="operate animation">
+    </div>
+    <script type="text/javascript">
+        $("#btn").click(function () {
+            var v=$("#animation").val();
+            $("#aaron").empty();
+            if(v=="1"){
+                //list array elements
+                $.each(['a','1'],function (i,item) {
+                   $("#aaron").append("index=" + i + ":element=" + item+"<br>");
+                });
+            }else if(v=="2"){
+                //list elements attribute
+                $.each({
+                    name:"xiaoming",
+                    age:18
+                },function (property,value) {
+                    $("#aaron").append("attribute name=" + property + "; attribute value=" + value+"<br>")
+                });
+            }
+        })
+    </script>
+</div>
+<script type="text/javascript">
+</script>
+</body>
+</html>
